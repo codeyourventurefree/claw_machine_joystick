@@ -17,7 +17,6 @@ void catchGift(int button1State){
     String gizwitsUrl = "https://api.gizwits.com/app/control/";
     gizwitsUrl += did;
     String result = http(gizwitsUrl,"gizwits",catchParams()); 
-    engaged = false;
     Serial.println(result);
   }
 }
@@ -127,9 +126,7 @@ void initClaw(){
   String gizwitsUrl = "https://api.gizwits.com/app/control/";
   gizwitsUrl += did;
   String result = http(gizwitsUrl,"gizwits",initClawParams());
-  if(result == "error"){
-    engaged = false;
-  }
+  engaged = false;
 }
 
 String initClawParams(){
