@@ -44,23 +44,23 @@ void joyStickControl(int xVal,int yVal){
   gizwitsUrl += did;
   if(xVal == 5){
     // Serial.println("Move Right");
-    http(gizwitsUrl,"gizwits",controlParams("MoveRight",1)); 
-    http(gizwitsUrl,"gizwits",controlParams("MoveRight",0));
+    http(gizwitsUrl,"gizwits",controlParams("MoveUp",1)); 
+    http(gizwitsUrl,"gizwits",controlParams("MoveUp",0));
   }    
   if(xVal == 0){
     // Serial.println("Move Left");
-    http(gizwitsUrl,"gizwits",controlParams("MoveLeft",1)); 
-    http(gizwitsUrl,"gizwits",controlParams("MoveLeft",0));
+    http(gizwitsUrl,"gizwits",controlParams("MoveDown",1)); 
+    http(gizwitsUrl,"gizwits",controlParams("MoveDown",0));
   }
   if(yVal == 5){
     // Serial.println("Move Right");
-    http(gizwitsUrl,"gizwits",controlParams("MoveDown",1)); 
-    http(gizwitsUrl,"gizwits",controlParams("MoveDown",0));
+    http(gizwitsUrl,"gizwits",controlParams("MoveRight",1)); 
+    http(gizwitsUrl,"gizwits",controlParams("MoveRight",0));
   }    
   if(yVal == 0){
     // Serial.println("Move Left");
-    http(gizwitsUrl,"gizwits",controlParams("MoveUp",1)); 
-    http(gizwitsUrl,"gizwits",controlParams("MoveUp",0));
+    http(gizwitsUrl,"gizwits",controlParams("MoveLeft",1)); 
+    http(gizwitsUrl,"gizwits",controlParams("MoveLeft",0));
   }    
 }
 
