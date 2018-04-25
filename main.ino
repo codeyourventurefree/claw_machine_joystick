@@ -4,12 +4,12 @@
 #include <ArduinoJson.h>
 
 // Wifi Credentials
-const char* ssid = "TheLoft";
-const char* password =  "loft1000";
+const char* ssid = "Your Wifi SSID";
+const char* password =  "Your Wifi Password";
 
 // Teleclaw Login
-const char* apiUsername = "lambdaAdmin";
-const char* apiPassword =  "lambdaAdmin123";
+const char* apiUsername = "Please Contact Teleclaw";
+const char* apiPassword =  "Please Contact Teleclaw";
 
 // Variables and Tokens
 String userToken;
